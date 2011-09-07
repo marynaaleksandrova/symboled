@@ -1,0 +1,21 @@
+{
+  "name": "Symboled",
+  "description": "Store your clothes symbols and descriptions",
+  "version": "2.0",
+  "app": {
+    "urls": [
+      "*://symboled.enginimation.com/"
+    ],
+    "launch": {
+      "web_url": "http://symboled.enginimation.com/"
+    }
+  },
+  "icons": {
+    "128": "128.png",
+    "16": "16.png"
+  },
+  "permissions": [
+    "unlimitedStorage",
+    "notifications"
+  ]
+}

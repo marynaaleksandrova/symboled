@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html manifest="app.mf">
+<head>
+    <title>Symboled</title>
+    <meta name="author" content="Enginimation Studio(enginimation.com)">
+    <meta name="description" content="Web application for storing information about your closes">
+    <link href="css/labels.css" rel="stylesheet">
+    <script src="js/lib/libs.bundle.js"></script>
+    <script src="js/lib/uuid.js"></script>
+    <script src="js/lib/storage.js"></script>
+    <script src="js/app/views.js"></script>
+    <script src="js/app/models.js"></script>
+    <script src="js/app/controller.js"></script>
+    <script>$(function(){AppController.init();});</script>
+</head>
+<body>
+	<header id="site_header">
+		<img src="css/images/logo.png" alt="logo" draggable="false"/>
+		<nav>
+			<ul>
+				<li id="symbols">Symbols</li>
+                <li id="tags">Tags</li>
+				<li id="how">How it works</li>
+				<li id="about">About us</li>
+			</ul>
+		</nav>
+		<div id="user_name" style="display:none;">aleksandrovamaryna@gmail.com<span>Log out</span></div>
+	</header>
+	<section id="empty_panel" class="menu_panel"></section>
+    <section id="symbol_panel" class="menu_panel">
+			<img src="css/images/wash.png" alt="wash" data-description="Machine wash is permitted" data-id="wash" /><img src="css/images/wash_permanent-press_wrinkle-resistan.png" alt="wash_permanent-press_wrinkle-resistan" data-description="Machine wash at permanent press/wrinkle resistant setting" data-id="wash_permanent-press_wrinkle-resistan" /><img src="css/images/wash_delicat.png" alt="wash_delicat" data-description="Machine wash at delicate/gentle cycle setting" data-id="wash_delicat" /><img src="css/images/wash_30.png" alt="wash_30" data-description="Machine wash in water not exceeding 30°C/85°F, at normal setting" data-id="wash_30" /><img src="css/images/wash_30_permanent-press.png" alt="wash_30_permanent-press" data-description="Machine wash in water not exceeding 30°C/85°F, at permanent press/wrinkle resistant setting" data-id="wash_30_permanent-press" /><img src="css/images/wash_30_delicat.png" alt="wash_30_delicat" data-description="Machine wash in water not exceeding 30°C/85°F, at delicate/gentle cycle setting" data-id="wash_30_delicat" /><img src="css/images/wash_40.png" alt="wash_40" data-description="Machine wash in water not exceeding 40°C/105°F, at normal setting" data-id="wash_40" /><img src="css/images/wash_40_permanent-press.png" alt="wash_40_permanent-press" data-description="Machine wash in water not exceeding 40°C/105°F, at permanent press/wrinkle resistant setting" data-id="wash_40_permanent-press" /><img src="css/images/wash_40_delicat.png" alt="wash_40_delicat" data-description="Machine wash in water not exceeding 40°C/105°F, at delicate/gentle cycle setting" data-id="wash_40_delicat" /><img src="css/images/wash_60.png" alt="wash_60" data-description="Machine wash in water not exceeding 60°C/140°F, at normal setting" data-id="wash_60" /><img src="css/images/wash_60_permanent-press.png" alt="wash_60_permanent-press" data-description="Machine wash in water not exceeding 60°C/140°F, at permanent press/wrinkle resistant setting" data-id="wash_60_permanent-press" /><img src="css/images/wash_95.png" alt="wash_95" data-description="Machine wash in water not exceeding 95°C/200°F, at normal setting" data-id="wash_95" /><img src="css/images/wash_95_permanent-press.png" alt="wash_95_permanent-press" data-description="Machine wash in water not exceeding 95°C/200°F, at permanent press/wrinkle resistant setting" data-id="wash_95_permanent-press" /><img src="css/images/wash_cold.png" alt="wash_cold" data-description="Machine wash in cold water not exceeding 30°C/85°F, at normal setting" data-id="wash_cold" /><img src="css/images/wash_cold_permanent-press.png" alt="wash_cold_permanent-press" data-description="Machine wash in cold water not exceeding 30°C/85°F, at permanent press/wrinkle resistant setting" data-id="wash_cold_permanent-press" /><img src="css/images/wash_cold_delicat.png" alt="wash_cold_delicat" data-description="Machine wash in cold water not exceeding 30°C/85°F, at delicate/gentle cycle setting" data-id="wash_cold_delicat" /><img src="css/images/wash_warm.png" alt="wash_warm" data-description="Machine wash in warm water not exceeding 60°C/140°F, at normal setting" data-id="wash_warm" /><img src="css/images/wash_warm_permanent-press.png" alt="wash_warm_permanent-press" data-description="Machine wash in warm water not exceeding 60°C/140°F, at permanent press/wrinkle resistant setting" data-id="wash_warm_permanent-press" /><img src="css/images/wash_warm_delicat.png" alt="wash_warm_delicat" data-description="Machine wash in warm water not exceeding 60°C/140°F, at delicate/gentle cycle setting" data-id="wash_warm_delicat" /><img src="css/images/wash_hot.png" alt="wash_hot" data-description="Machine wash in hot water not exceeding 95°C/200°F, at normal setting" data-id="wash_hot" /><img src="css/images/wash_hot_permanent-press.png" alt="wash_hot_permanent-press" data-description="Machine wash in hot water not exceeding 95°C/200°F, at permanent press/wrinkle resistant setting" data-id="wash_hot_permanent-press" /><img src="css/images/wash_hot_delicat.png" alt="wash_hot_delicat" data-description="Machine wash in hot water not exceeding 95°C/200°F, at delicate/gentle cycle setting" data-id="wash_hot_delicat" /><img src="css/images/wash_hand.png" alt="wash_hand" data-description="Hand wash only in water not exceeding 40°C/105°F, machine wash is not permitted" data-id="wash_hand" /><img src="css/images/wash_not.png" alt="wash_not" data-description="Do not wash" data-id="wash_not" />
+			<p></p>
+		    <img src="css/images/bleach.png" alt="bleach" data-description="Any bleach is allowed as needed" data-id="bleach" /><img src="css/images/bleach_oxigen.png" alt="bleach_oxigen" data-description="Only oxygen bleach allowed as needed" data-id="bleach_oxigen" /><img src="css/images/bleach_chlorine.png" alt="bleach_chlorine" data-description="Only chlorine bleach allowed as needed" data-id="bleach_chlorine" /><img src="css/images/bleach_not.png" alt="bleach_not" data-description="Do not bleach" data-id="bleach_not" /><img src="css/images/bleach_not_obsolete.png" alt="bleach_not_obsolete" data-description="Do not bleach" data-id="bleach_not_obsolete" />
+			<p></p>
+		    <img src="css/images/dry.png" alt="dry" data-description="Drying is allowed" data-id="dry" /><img src="css/images/drum_dry.png" alt="drum_dry" data-description="Drum drying is allowed" data-id="drum_dry" /><img src="css/images/dry_permanent-press_wrinkle-resistan.png" alt="dry_permanent-press_wrinkle-resistan" data-description="Drum dry at permanent press setting" data-id="dry_permanent-press_wrinkle-resistan" /><img src="css/images/dry_delicat.png" alt="dry_delicat" data-description="Drum dry at delicate cycle setting" data-id="dry_delicat" /><img src="css/images/drum_dry_low.png" alt="drum_dry_low" data-description="Drum dry at low heat not exceeding 55°C/130°F" data-id="drum_dry_low" /><img src="css/images/drum_dry_normal.png" alt="drum_dry_normal" data-description="Drum dry at medium heat not exceeding 65°C/150°F" data-id="drum_dry_normal" /><img src="css/images/drum_dry_high.png" alt="drum_dry_high" data-description="Drum dry at high heat not exceeding 75°C/165°F" data-id="drum_dry_high" /><img src="css/images/dry_line.png" alt="dry_line" data-description="Line dry" data-id="dry_line" /><img src="css/images/dry_flat.png" alt="dry_flat" data-description="Dry on a suitable flat surface" data-id="dry_flat" /><img src="css/images/dry_drip.png" alt="dry_drip" data-description="Drip dry" data-id="dry_drip" /><img src="css/images/dry_shade.png" alt="dry_shade" data-description="Dry in the shade" data-id="dry_shade" /><img src="css/images/dry_line_shade.png" alt="dry_line_shade" data-description="Line dry in the shade" data-id="dry_line_shade" /><img src="css/images/dry_flat_shade.png" alt="dry_flat_shade" data-description="Dry on a suitable flat surface in the shade" data-id="dry_flat_shade" /><img src="css/images/dry_drip_shade.png" alt="dry_drip_shade" data-description="Drip dry in the shade" data-id="dry_drip_shade" /><img src="css/images/drum_dry_not.png" alt="drum_dry_not" data-description="Drum drying is not allowed" data-id="drum_dry_not" /><img src="css/images/wring_no.png" alt="wring_no" data-description="Do not wring" data-id="wring_no" /><img src="css/images/wring_no_2.png" alt="wring_no_2" data-description="Do not wring" data-id="wring_no_2" />
+			<p></p>
+			<img src="css/images/iron.png" alt="iron" data-description="Iron is allowed" data-id="iron" /><img src="css/images/iron_low.png" alt="iron_low" data-description="Iron using low temperature setting" data-id="iron-low" /><img src="css/images/iron_medium.png" alt="iron_medium" data-description="Iron using medium temperature setting" data-id="iron_medium" /><img src="css/images/iron_high.png" alt="iron_high" data-description="Iron using high temperature setting" data-id="iron_high" /><img src="css/images/iron_no-staem.png" alt="iron_no-staem" data-description="Steam ironing is not allowed" data-id="iron_no-staem" /><img src="css/images/iron_not.png" alt="iron_not" data-description="Do not iron" data-id="iron_no-staem" />
+			<p></p>
+			<img src="css/images/prof_clean.png" alt="prof_clean" data-description="Dryclean is allowed" data-id="prof_clean" /><img src="css/images/prof_clean_any.png" alt="prof_clean_any" data-description="Dryclean using any solvent" data-id="prof_clean_any" /><img src="css/images/prof_clean_hydrocarbon.png" alt="prof_clean_hydrocarbon" data-description="Dryclean using Petroleum solvent only" data-id="prof_clean_hydrocarbon" /><img src="css/images/prof_clean_hydrocarbon_gentle.png" alt="prof_clean_hydrocarbon_gentle" data-description="Gentle dryclean using Petroleum solvent only" data-id="prof_clean_hydrocarbon_gentle" /><img src="css/images/prof_clean_hydrocarbon_very-gentle.png" alt="prof_clean_hydrocarbon_very-gentle" data-description="Very gentle dryclean using Petroleum solvent only" data-id="prof_clean_hydrocarbon_very-gentle" /><img src="css/images/prof_clean_pce.png" alt="prof_clean_pce" data-description="Dryclean using any solvent except trichloroethylene" data-id="prof_clean_pce" /><img src="css/images/prof_clean_pce_gentle.png" alt="prof_clean_pce_gentle" data-description="Gentle dryclean using any solvent except trichloroethylene" data-id="prof_clean_pce_gentle" /><img src="css/images/prof_clean_pce_very-gentle.png" alt="prof_clean_pce_very-gentle" data-description="Very gentle dryclean using any solvent except trichloroethylene" data-id="prof_clean_pce_very-gentle" /><img src="css/images/wet_clean.png" alt="wet_clean" data-description="Professional wet clean is allowed" data-id="wet_clean" /><img src="css/images/wet_clean_gentle.png" alt="wet_clean_gentle" data-description="Gentle wet cleaning" data-id="wet_clean_gentle" /><img src="css/images/wet_clean_very-gentle.png" alt="wet_clean_very-gentle" data-description="Very gentle wet cleaning" data-id="wet_clean_very-gentle" /><img src="css/images/dry_low-heat.png" alt="dry_low-heat" data-description="Dryclean at low heat setting" data-id="dry_low-heat" /><img src="css/images/dry_no-steam-finishing.png" alt="dry_no-steam-finishing" data-description="Dryclean at no steam finishing setting" data-id="dry_no-steam-finishing" /><img src="css/images/dry_reduce-moisture.png" alt="dry_reduce-moisture" data-description="Dryclean at reduce moisture setting" data-id="dry_reduce-moisture" /><img src="css/images/dry_short-cycle.png" alt="dry_short-cycle" data-description="Dryclean at short cycle setting" data-id="dry_short-cycle" /><img src="css/images/clean_not.png" alt="clean_not" data-description="Do not dryclean" data-id="clean_not" /><img src="css/images/prof_wet_clean_not.png" alt="prof_wet_clean_not" data-description="Do not wet clean" data-id="prof_wet_clean_not" />
+	</section>
+	<section id="tags_panel" class="menu_panel">
+	</section>
+	<section id="how_panel" class="menu_panel">
+		<p>Only thing you need, it's to find laundry label on your garment, fill out form "New garment" and add it!</p>
+		<p> To add care symbols, just drag them from the library and drop to area "Drag symbols here". Explanation text to symbols will be added automatically.</p>
+		<p>And finally you can cut out all care labels from your wardrobe!</p>
+		<p>If you can't find a symbol, please take a picture and send it to <a href='mailto:hello@enginimation.com'> us</a>. We will add this symbol as soon as possible and send you a notification.</p>
+	</section>
+	<section id="about_panel" class="menu_panel">
+		This service was developed for you by Enginimation Studio in 2011.
+		<p>Have any problems/ideas? Contact <a href='mailto:hello@enginimation.com'> us</a></p>
+	</section>
+	<div id="container">	
+		<div class="first">
+			<article id="new_box" class="box">
+				<header><h1>New garment </h1></header>
+				<input id="garment_name" placeholder="Garment name" required />
+				<p class="comment">Name of new garment with small explanation</p>
+				<section id="drop_zone"><p id="drag_instructions">Drag symbols here</p></section>
+				<textarea id="garment_notes"rows="2" placeholder="Notes"></textarea>
+				<p class="comment">Add notes about molting, contraction etc.</p>
+				<input id="garment_tags" type="text" placeholder="Tags" required />
+				<p class="comment">Add tags with color, style, owner, pattern of the garment &#9001;separate each with comma&#9002;</p>
+				<div class="right_side_content"><a href="#"  title="Press to add new garment to your wardrobe" id="add">Add</a></div>
+			</article>
+		</div>
+		<div class="second"></div>
+		<div class="third"></div>
+		<div class="forth"></div>
+	</div>
+<script type="html/template" id="item_tpl">
+    <header><h1 class="display"><%= name %></h1><input class="edit_garment_name edit" value="<%= name %>" placeholder="Garment name" required /></header>
+    <section class="symbols display">
+        <% _.each(symbols, function(symbol) { %> <img src="<%= symbol.src %>" alt="<%= symbol.alt %>" data-description="<%= symbol.description %>" draggable="false"/> <% }); %>
+    </section>
+    <section class="drop_zone edit"><% _.each(symbols, function(symbol) { %> <img src="<%= symbol.src %>" alt="<%= symbol.alt %>" data-description="<%= symbol.description %>" draggable="false"/> <% }); %></section>
+    <section class="explanation_text display"><% _.each(symbols, function(symbol) { %> <span><%= symbol.description %></span> <% }); %></section>
+    <section class="notes"><div class="display"><span>Note! </span><%= notes %></div><div class="edit"><textarea class="edit_garment_notes"rows="2" placeholder="Notes"><%= notes %></textarea></div></section>
+    <section class="tags">
+        <div class="display"><%= tags %></div>
+        <input class="edit_garment_tags edit" type="text" value="<%= tags %>" required placeholder="Tags"/>
+    </section>
+    <section class="mini_toolbar">
+        <a class="edit save">Save</a><img src="css/images/edit.png" alt="Edit" title="Edit" class="display edit_btn"/><img src="css/images/delete.png" alt="Delete" title="Delete" class="display delete_btn"/>
+    </section>
+</script>
+<script type="html/template" id="tag_tpl">
+    <%= tag %>
+ </script>
+<script type="html/template" id="symbol_tpl">
+    <img src="<%= src %>" alt="<%= alt %>" data-description="<%= description %>" draggable="false"/>
+ </script>
+
+</body>
+</html>
