@@ -1,0 +1,20 @@
+{
+  "author": "Enginimation Studio <hello@enginimation.com> (http://enginimation.com)",
+  "name": "symboled",
+  "description": "Application for storing caring information for your clothes.",
+  "version": "0.8.0",
+  "homepage": "http://symboled.enginimation.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/enginimation/symboled.git"
+  },
+  "main": "./app.js",
+  "engines": {
+    "node": "~v0.4.9"
+  },
+  "dependencies": {
+    "express": ">=2.4.6",
+    "connect-app-cache": ">=0.2.1"
+  },
+  "devDependencies": {}
+}
