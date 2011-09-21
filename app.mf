@@ -1,13 +1,13 @@
 CACHE MANIFEST
 16.png
 index.html
+css/labels.css
 js/app/controller.js
 js/app/models.js
 js/app/views.js
 js/lib/libs.bundle.js
 js/lib/uuid.js
 js/lib/storage.js
-css/labels.css
 css/images/wash.png
 css/images/wash_permanent-press_wrinkle-resistan.png
 css/images/wash_delicat.png
